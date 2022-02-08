@@ -61,24 +61,32 @@ $ ros2 run demo_nodes_py listener
 <pre>
 <code>
 $ ros2 run < package_name > < node_name >
+# Example
+$ ros2 run yrlros2 yrl_lidar
 </code>
 </pre>
 ### 특정 Node parameter 확인
 <pre>
 <code>
 $ ros2 param list /< node_name >
+# Example
+$ ros2 param list /yrl_lidar
 </code>
 </pre>
 ### 특정 Node parameter 변경
 <pre>
 <code>
 $ ros2 param set /< node_name > < parameter_name > < parameter_value >
+# Example
+$ ros2 param set /yrl_lidar lidar_IP 192.168.1.13
 </code>
 </pre>
 ### 특정 Node yaml file load
 <pre>
 <code>
 $ ros2 param load /< node_name > < path_to_yaml_file >
+# Example
+$ ros2 param load /yrl_lidar ~/colcon_ws/src/yrlros2/cfg/lidar_params.yaml
 </code>
 </pre>
 ### Node 실행 시, 직접 parameter변수 값 변경법
@@ -86,7 +94,7 @@ $ ros2 param load /< node_name > < path_to_yaml_file >
 <code>
 $ ros2 run < package_name > < node_name > --ros-args -p < parameter_name >:=< parameter_value >
 # Example
-$ ros2 run < package_name > < node_name > --ros-args -p lidar_IP:="192.168.1.13" -p max_Vertical_Angle:=20 -p extrinsic_Transform:="[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]"
+$ ros2 run yrlros2 yrl_lidar --ros-args -p lidar_IP:="192.168.1.13" -p max_Vertical_Angle:=20 -p extrinsic_Transform:="[0.0, 0.0, 1.0, 0.0, 0.0, 0.0]"
 </code>
 </pre>
 ### Node 실행 시, yaml file load 하는 방법
@@ -94,7 +102,7 @@ $ ros2 run < package_name > < node_name > --ros-args -p lidar_IP:="192.168.1.13"
 <code>
 $ ros2 run < package_name > < node_name > --ros-args --params-file < path_to_yaml_file >
 # Example
-$ ros2 run < package_name > < node_name > --ros-args --params-file ~/colcon_ws/src/yrlros2/cfg/lidar_params.yaml
+$ ros2 run yrlros2 yrl_lidar --ros-args --params-file ~/colcon_ws/src/yrlros2/cfg/lidar_params.yaml
 </code>
 </pre>
 
