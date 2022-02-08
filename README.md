@@ -65,7 +65,7 @@ $ ros2 run demo_nodes_py listener
 ## Node 실행
 <pre>
 <code>
-$ ros2 run <package_name> <node_name>
+$ ros2 run < package_name > <node_name>
 </code>
 </pre>
 ## 특정 Node parameter 확인
