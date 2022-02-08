@@ -116,10 +116,8 @@ $ ros2 launch yrlros2 yrl_lidar.launch.py
 </pre>
 
 ### 환경 설정 bashrc 설정법
-<pre>
-<code>
+```
 $ echo "ROS_VERSION=2"  >> ~/.bashrc
 $ echo "ROS_PYTHON_VERSION=3"  >> ~/.bashrc
 $ echo "ROS_DISTRO=galactic"  >> ~/.bashrc
-</code>
-</pre>
+```
