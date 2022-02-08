@@ -115,11 +115,7 @@ $ ros2 run < package_name > < node_name > --ros-args --params-file ~/colcon_ws/s
 <pre>
 <code>
 $ ros2 launch < package_name > < launch_file_name >
-</code>
-</pre>
 ### 예시
-<pre>
-<code>
 $ ros2 launch yrlros2 yrl_lidar.launch.py
 </code>
 </pre>
