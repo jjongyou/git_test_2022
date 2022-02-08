@@ -90,4 +90,8 @@ $ ros2 launch yrlros2 yrl_lidar.launch.py
 $ echo "ROS_VERSION=2"  >> ~/.bashrc
 $ echo "ROS_PYTHON_VERSION=3"  >> ~/.bashrc
 $ echo "ROS_DISTRO=galactic"  >> ~/.bashrc
+#alias를 이용하여 간편한 명령어 이용
+$ echo "alias cs='cd ~/colcon_ws/src'"  >> ~/.bashrc
+$ echo "alias cw='cd ~/colcon_ws"  >> ~/.bashrc
+$ echo "alias cm='cd ~/colcon_ws&& colcon build --symlink-install"  >> ~/.bashrc
 ```
