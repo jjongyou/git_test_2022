@@ -12,5 +12,11 @@ int main() {
 	cout << "empty : " << v.empty() << endl;
 	cout << "empty : " << v.empty() << endl;
 	cout << "empty : " << v.empty() << endl;
+	cout << "empty : " << v.empty() << endl;
+	cout << "empty : " << v.empty() << endl;
+	cout << "empty : " << v.empty() << endl;
+	cout << "empty : " << v.empty() << endl;
+	cout << "empty : " << v.empty() << endl;
+	cout << "empty : " << v.empty() << endl;
 	return 0;
 }
